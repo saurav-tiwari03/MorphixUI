@@ -46,7 +46,7 @@ export default function HeroSection() {
                         </a>
                     </div>
                     <div>
-                        <Link href='/components' className="border-b-1 border-dashed border-[var(--text-color)] pb-[2px]">Browse Components</Link>
+                        <Link href='/docs/components' className="border-b-1 border-dashed border-[var(--text-color)] pb-[2px]">Browse Components</Link>
                     </div>
                 </div>
 
