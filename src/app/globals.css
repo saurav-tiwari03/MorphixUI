@@ -1,24 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import "tailwindcss";
-
 
 
 
 /* Light theme variables */
 :root {
-  --background-color: #EEE6CA;
+  --background-color: #f6f6f6;
   --text-color: #080404;
+  --opposite-text-color: #f6f6f6;
+  --opposite-background-color: #222;
+  --border-color: #000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Dark theme variables */
 [data-theme="dark"] {
-  --background-color: #121212;
-  --text-color: #EEE6CA;
-}
-
-/* Blue theme variables */
-[data-theme="blue"] {
-  --background-color: #1e3a8a;
-  --text-color: #ffffff;
+  --background-color: #000;
+  --text-color: #f6f6f6;
+  --black-text-color: #000;
+  --opposite-text-color: #222;
+  --opposite-background-color: #f6f6f6;
+  --border-color: #f6f6f6;
 }
 
 /* Apply variables to body for better theme switching */
@@ -26,4 +30,5 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   transition: background-color 0.2s ease, color 0.2s ease;
+  font-family: 'Mulish', sans-serif;
 }
